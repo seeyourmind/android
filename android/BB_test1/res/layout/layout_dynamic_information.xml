@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 定义用户头像及发布时间 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_dynamic_information_content_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <ImageView
+            android:id="@+id/ldi_userbar_userimage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/layout_user_bg_oval"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/ldi_userbar_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ldi_userbar_userimage"
+            android:text="username"
+            android:textColor="@color/text_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ldi_userbar_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ldi_userbar_username"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/ldi_userbar_userimage"
+            android:text="11:20:35"
+            android:textColor="@color/silver_gray"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <!-- 定义发布的文字 -->
+
+    <LinearLayout
+        android:id="@+id/layout_dynamic_information_content_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/ldi_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hello world!"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 定义发布的图片 -->
+
+    <LinearLayout
+        android:id="@+id/layout_dynamic_information_content_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <!-- 定义转发、评论 -->
+
+    <LinearLayout
+        android:id="@+id/layout_dynamic_information_content_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ldi_bottombar_reprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_dynamic_information_bottombar_bg"
+            android:text="转发"
+            android:textColor="@color/silver_gray"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/silver" />
+
+        <Button
+            android:id="@+id/ldi_bottombar_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_dynamic_information_bottombar_bg"
+            android:text="评论"
+            android:textColor="@color/silver_gray"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent" 
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/silver" />
+
+        <Button
+            android:id="@+id/ldi_bottombar_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_dynamic_information_bottombar_bg"
+            android:text="赞"
+            android:textColor="@color/silver_gray"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

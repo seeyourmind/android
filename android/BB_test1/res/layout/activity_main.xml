@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 主页title -->
+
+    <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/new_message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dip"
+            android:text="send" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Home" />
+
+        <TextView
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="search" />
+    </RelativeLayout>
+
+    <!-- 主页bottombar -->
+
+    <LinearLayout
+        android:id="@+id/main_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/find_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="find" />
+
+        <Button
+            android:id="@+id/person_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="person" />
+    </LinearLayout>
+
+    <!-- 主页context -->
+
+    <FrameLayout
+        android:id="@+id/id_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/main_bottombar"
+        android:layout_below="@id/main_title" />
+
+</RelativeLayout>
