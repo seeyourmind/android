@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 日期与饼图 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        <!-- 日期 -->
+        <LinearLayout
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="50sp"
+                android:text="25"/>
+            <TextView
+                android:id="@+id/date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:text="October"/>
+        </LinearLayout>
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/pie"
+            android:layout_toRightOf="@id/date"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+    </RelativeLayout>
+    <!-- 账单 -->
+    <ListView
+        android:id="@+id/account_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="#fff"
+        android:dividerHeight="10dp"></ListView>
+
+</LinearLayout>

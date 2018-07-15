@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/menuHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="首页"
+            android:textColor="@drawable/menu_item"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/menuNew"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="新建"
+            android:textColor="@drawable/menu_item"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/menuMine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="个人"
+            android:textColor="@drawable/menu_item"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/menuSplitter"
+        android:layout_above="@id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#696969"/>
+    <FrameLayout
+        android:id="@+id/menuFragment"
+        android:layout_above="@id/menuSplitter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CategoryLabelAttrs">
+        <!-- 边框属性 -->
+        <attr name="borderColor" format="color"/>
+        <attr name="borderWeight" format="dimension"/>
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="backgroundColor" format="color"/>
+        <!-- 文字属性 -->
+        <attr name="textSize" format="dimension"/>
+        <attr name="textString" format="string"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>

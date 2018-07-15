@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/tenpx"
+    android:layout_margin="@dimen/tenpx"
+    android:background="@drawable/bill_tag_background"
+    android:orientation="vertical">
+    <!-- 头信息：时间、收支 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/tenpx"
+            android:padding="@dimen/tenpx"
+            android:textSize="@dimen/default_textsize"
+            android:text="2017-06-03 13:14:47"/>
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/tenpx"
+            android:textSize="@dimen/default_textsize"
+            android:text="分类"/>
+        <TextView
+            android:id="@+id/in_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/tenpx"
+            android:padding="@dimen/tenpx"
+            android:background="@drawable/income_background"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_textsize"
+            android:text="收"/>
+    </RelativeLayout>
+    <!-- 内容 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:padding="@dimen/tenpx"
+            android:textSize="35px"
+            android:background="@drawable/bill_tag_background"
+            android:hint="账目描述"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="@dimen/tenpx"
+            android:textSize="35px"
+            android:hint="花费"/>
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:padding="@dimen/tenpx"
+            android:textSize="35px"
+            android:background="@drawable/bill_tag_background"
+            android:hint="账目金额"
+            android:inputType="numberDecimal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/tenpx"
+            android:textSize="35px"
+            android:hint="元"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

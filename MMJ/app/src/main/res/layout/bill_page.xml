@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.fyzer.mmj.ui.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/bill_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 类别选择 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tenpx"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tenpx"
+                android:textSize="@dimen/default_textsize"
+                android:text="标签:"/>
+            <com.fyzer.mmj.ui.templet.LineBreakLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "三餐"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#ff69b4"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "日用品"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#40e0d0"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "服装"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#ff7f50"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "出行"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#22bb22"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "住宿"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#ba55d3"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "娱乐"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#ffa07a"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "聚会"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#00ffff"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "医疗"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#3cb371"
+                    app:borderRadius = "@dimen/default_radius" />
+                <com.fyzer.mmj.ui.templet.CategoryLabelView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tenpx"
+                    android:layout_marginLeft="@dimen/tenpx"
+                    app:textString = "其它"
+                    app:textSize = "@dimen/default_textsize"
+                    app:textColor = "#fff"
+                    app:backgroundColor = "#ff0000"
+                    app:borderRadius = "@dimen/default_radius" />
+            </com.fyzer.mmj.ui.templet.LineBreakLayout>
+        </LinearLayout>
+        <!-- 时间选择 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tenpx"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tenpx"
+                android:textSize="@dimen/default_textsize"
+                android:text="时间:"/>
+            <com.fyzer.mmj.ui.templet.CategoryLabelView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tenpx"
+                android:padding="@dimen/tenpx"
+                app:textString = "当前时间"
+                app:textSize = "@dimen/default_textsize"
+                app:textColor = "#fff"
+                app:backgroundColor = "#c3b371"
+                app:borderRadius = "@dimen/default_radius" />
+            <com.fyzer.mmj.ui.templet.CategoryLabelView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tenpx"
+                android:padding="@dimen/tenpx"
+                app:textString = "自定义"
+                app:textSize = "@dimen/default_textsize"
+                app:textColor = "#fff"
+                app:backgroundColor = "#00ffff"
+                app:borderRadius = "@dimen/default_radius" />
+        </LinearLayout>
+        <!-- 支付方式 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tenpx"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tenpx"
+                android:textSize="@dimen/default_textsize"
+                android:text="支付:"/>
+            <com.fyzer.mmj.ui.templet.CategoryLabelView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tenpx"
+                android:padding="@dimen/tenpx"
+                app:textString = "现金"
+                app:textSize = "@dimen/default_textsize"
+                app:textColor = "#fff"
+                app:backgroundColor = "#f08080"
+                app:borderRadius = "@dimen/default_radius" />
+            <com.fyzer.mmj.ui.templet.CategoryLabelView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tenpx"
+                android:padding="@dimen/tenpx"
+                app:textString = "支付宝"
+                app:textSize = "@dimen/default_textsize"
+                app:textColor = "#fff"
+                app:backgroundColor = "#00bfff"
+                app:borderRadius = "@dimen/default_radius" />
+            <com.fyzer.mmj.ui.templet.CategoryLabelView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tenpx"
+                android:padding="@dimen/tenpx"
+                app:textString = "微信"
+                app:textSize = "@dimen/default_textsize"
+                app:textColor = "#fff"
+                app:backgroundColor = "#32cd32"
+                app:borderRadius = "@dimen/default_radius" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 账目列表 -->
+    <ListView
+        android:id="@+id/bill_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bill_title"
+        android:dividerHeight="10px"
+        android:divider="#fff"></ListView>
+    <!-- 操作按钮 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:background="@null"
+            android:text="@string/icon_tijiao"
+            android:textColor="#32cd32"
+            android:textSize="60px"/>
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:background="@null"
+            android:text="@string/icon_tianjia"
+            android:textColor="#00bfff"
+            android:textSize="80px"/>
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:padding="0px"
+            android:background="@null"
+            android:text="@string/icon_quxiao"
+            android:textColor="#ff0000"
+            android:textSize="60px"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

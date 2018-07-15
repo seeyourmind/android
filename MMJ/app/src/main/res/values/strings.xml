@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MMJ</string>
+    <string name="icon_shouye">&#xe609;</string>
+    <string name="icon_tijiao">&#xe664;</string>
+    <string name="icon_user">&#xe73c;</string>
+    <string name="icon_quxiao">&#xe713;</string>
+    <string name="icon_tianjia">&#xe68e;</string>
+    <string name="icon_fenxi">&#xe65f;</string>
+    <string name="icon_zhangdan">&#xe73f;</string>
+</resources>
